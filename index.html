@@ -1,113 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kapil Kumar | Backend Developer</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f9fafc;
+      background-color: #f4f4f9;
       color: #333;
     }
     .container {
       max-width: 900px;
-      margin: auto;
-      padding: 2rem;
+      margin: 0 auto;
+      padding: 40px 20px;
     }
-    header {
+    .header {
       text-align: center;
-      margin-bottom: 2rem;
+      margin-bottom: 40px;
     }
-    header h1 {
-      font-size: 3rem;
-      margin: 0.2rem;
+    .header h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    .header h2 {
+      font-size: 20px;
+      color: #777;
+    }
+    .header p {
+      margin: 5px 0;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    .section h2 {
+      font-size: 26px;
+      margin-bottom: 20px;
       color: #2c3e50;
     }
-    header p {
-      font-size: 1.2rem;
-      color: #555;
-    }
-    .contact {
-      text-align: center;
-      margin-bottom: 3rem;
-    }
-    .contact p {
-      margin: 0.3rem 0;
-      font-size: 1rem;
-    }
-    .projects h2 {
-      font-size: 2rem;
-      margin-bottom: 1.5rem;
-      color: #1a1a1a;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 0.5rem;
-    }
     .project {
-      margin-bottom: 2rem;
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-      padding: 1.5rem;
+      margin-bottom: 30px;
     }
-    .project p {
-      margin: 0.5rem 0;
-      line-height: 1.8;
+    .skills {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px 40px;
     }
-    a {
-      color: #007acc;
-      text-decoration: none;
+    .skill-category {
+      font-weight: bold;
+      margin-bottom: 5px;
     }
-    a:hover {
-      text-decoration: underline;
+    ul {
+      padding-left: 20px;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <header>
+    <div class="header">
       <h1>Kapil Kumar</h1>
-      <p>Backend Developer | Django | REST APIs | LLM Integration</p>
-    </header>
-
-    <div class="contact">
-      <p><strong>Email:</strong> sharmaakapil10@gmail.com</p>
-      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/kapil-kumar-sharma" target="_blank">kapil-kumar-sharma</a></p>
+      <h2>Backend Developer</h2>
+      <p>Email: sharmaakapil10@gmail.com</p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/kapil-kumar-sharma" target="_blank">kapil-kumar-sharma</a></p>
     </div>
 
-    <div class="projects">
+    <div class="section">
       <h2>Projects</h2>
 
       <div class="project">
-        <p>I built a no-code platform where politicians in the US can create and manage their own campaign websites without needing technical knowledge. The websites are fully dynamic, allowing users to select components, customize layouts, and preview designs before publishing. A robust Stripe integration enables seamless monthly and yearly subscription plans. Users can publish on their own domain or purchase one directly from the app, making it a comprehensive and user-friendly website builder.</p>
+        <p>A dynamic platform built using Django and Django Rest Framework that enables US politicians to create fully customizable campaign websites. The platform features a frontend editor for real-time website editing and a backend preview system to visualize changes before publishing. Users can subscribe to monthly or yearly plans via Stripe and choose to publish on a custom domain or buy one directly through the system.</p>
       </div>
 
       <div class="project">
-        <p>This mental and healthcare platform focuses on spreading wellness through yoga, meditation, and healing practices. I built features allowing users to view wellness-related content, listen to podcasts, and purchase related products. Integrated Razorpay for payment, and OAuth-based login (Google/Facebook). The system includes gamified daily quizzes, community exploration, and rewards system where users earn points and redeem them for discounts. Everything is designed to foster daily engagement and mindful living.</p>
+        <p>A wellness platform where users explore content related to yoga, healing, and meditation. Users can purchase wellness-related products, listen to podcasts, and access recorded sessions. Login is available via Google and Facebook, and payments are handled using Razorpay. The platform includes a daily quiz with point-based rewards, redeemable as discounts, and a search feature for nearby wellness communities.</p>
       </div>
 
       <div class="project">
-        <p>I designed a multi-tenant NFC digital card platform where companies can onboard users and create tap-enabled digital business cards. These cards support real-time data sharing and come with customizable templates. Users can add business hours, upload documents, update social media links, and even receive inquiries via an integrated form. It also supports role-based access within organizations. The goal was to merge modern networking with enterprise-level card and identity management.</p>
+        <p>An NFC-powered digital business card system developed as a Django tenant project. Companies act as tenants, and users can create personalized NFC cards to share business details through a simple tap. The system supports profile updates, working hours, enquiry forms, document uploads, social media links, and custom fields, all while supporting multi-tenancy architecture.</p>
       </div>
 
       <div class="project">
-        <p>I developed a mobile application for advanced car control systems, integrating features like cruise control, speed limitation, eco/sport driving modes, and more. Admins can customize plans, manage car-user relationships, and oversee NexCruise logs through a custom Django admin panel. Real-time communication is powered by WebSockets via Django Channels. I also built a separate admin portal for car dealers and set up webhooks with Zoho CRM to sync user data automatically. The app was a production upgrade from an earlier version, including full migration of previous user data.</p>
+        <p>A feature-rich mobile app for cars offering cruise control, eco and sports modes, speed limit, hill hold, and more. Admins can manage subscriptions, vehicles, and users. The Django admin panel is customized to handle push notifications and log tracking using Django Channels and WebSocket. Webhooks sync Zoho CRM updates, and user data from the older version is migrated seamlessly. OTP login is supported.</p>
       </div>
 
       <div class="project">
-        <p>This iOS mobile app is designed for airplane and shop owners to manage services, bookings, and work orders. Shop owners configure their availability, services, and delivery modes. Plane owners can book services that span multiple days. I implemented custom pricing, rescheduling, and approval workflows. Stripe integration handles payments and manual refunds. Notifications are sent via email, push, and in-app alerts. The admin dashboard was enhanced to manage detailed financial and booking records, though the project didn’t proceed beyond beta launch.</p>
+        <p>An app for shop and plane owners. Shop owners manage services, schedules, and delivery modes, including busy time slots. Plane owners can book services, reschedule, and handle appointments. Work orders are created for additional in-progress tasks. Stripe handles payment and refund flows. The platform includes email, push, and in-app notifications, and supports login via Google, Microsoft, Facebook, and Apple.</p>
       </div>
 
       <div class="project">
-        <p>This is a B2B marketplace app for the Middle East and Gulf region, where IT companies can buy and sell hardware like laptops, servers, and accessories. Each seller and buyer is a company with multiple internal users (admins, managers, etc.). Quotes created by buyers reach only relevant sellers, who can respond with offers. Detailed quote approval workflows, custom payment methods (online & offline), shipment tracking, and admin-verified user registration make this a robust e-commerce ecosystem. Sellers can also list direct offers, which buyers can quote against, forming orders upon mutual approval.</p>
+        <p>A B2B marketplace for IT products targeting the Middle East and Gulf countries. Sellers and buyers belong to companies with sub-users like managers and admins. Buyers submit quotes, and only relevant sellers are notified. Sellers respond with offers that buyers can approve or request changes to. It features direct seller offers, shipment tracking, document verification, and both online and offline payments with approval flows.</p>
       </div>
 
       <div class="project">
-        <p>This platform helps students and researchers format academic documents using LLM-powered suggestions and corrections. After login (email or social login), users upload papers which are processed via an LLM model. They can edit or regenerate the content based on feedback. A referral system rewards both referrer and referee with credits. Credit-based usage allows for flexible access, with subscription models like pay-per-use, weekly, semester-wise, or yearly. Students also receive bonus credits for milestones. The platform integrates Trustpilot for review collection and social sharing for organic growth.</p>
+        <p>A platform designed for students and researchers to upload academic documents for LLM-based review and formatting. Users earn credits through referrals, logins, and activity milestones to format documents without payment. The system supports detailed credit management, multiple subscription types, and pay-per-use models. Trustpilot is integrated for reviews, and login is available via email/password or social accounts.</p>
       </div>
     </div>
+
+    <div class="section">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div>
+          <div class="skill-category">Python</div>
+          <ul>
+            <li>Django, DRF, Celery, Websocket</li>
+            <li>django-grpc, Pandas, BS4, Selenium</li>
+          </ul>
+        </div>
+        <div>
+          <div class="skill-category">Databases</div>
+          <ul>
+            <li>PostgreSQL, Redis, MongoDB</li>
+          </ul>
+        </div>
+        <div>
+          <div class="skill-category">Cloud</div>
+          <ul>
+            <li>AWS - EC2, ECR, RDS, IAM, S3, VPC, CI/CD pipelines</li>
+          </ul>
+        </div>
+        <div>
+          <div class="skill-category">Tools</div>
+          <ul>
+            <li>Docker, RabbitMQ, Elastic Search</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
   </div>
 </body>
 </html>
