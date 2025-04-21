@@ -1,37 +1,94 @@
-<!-- index.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Kapil Sharma | Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kapil Kumar | Backend Developer</title>
   <style>
-    body { font-family: Arial, sans-serif; background: #f2f2f2; padding: 2rem; }
-    .container {
-      max-width: 700px;
-      margin: auto;
-      background: white;
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7f9fc;
+      color: #333;
     }
-    h1 { color: #333; }
-    ul { margin-left: 1rem; }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .subtitle {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      color: #555;
+    }
+    .contact {
+      margin-bottom: 2rem;
+      font-size: 1rem;
+    }
+    .contact p {
+      margin: 0.3rem 0;
+    }
+    .projects {
+      margin-top: 2rem;
+    }
+    .project {
+      margin-bottom: 1.5rem;
+      background: #fff;
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Kapil Sharma</h1>
-    <p>Backend Developer | Django | REST APIs | LLM Integration</p>
+    <h1>Kapil Kumar</h1>
+    <p class="subtitle">Backend Developer</p>
+    
+    <div class="contact">
+      <p><strong>Email:</strong> sharmaakapil10@gmail.com</p>
+      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/kapil-kumar-sharma" target="_blank">kapil-kumar-sharma</a></p>
+    </div>
 
-    <h2>Projects</h2>
-    <ul>
-      <li>Dynamic Website Builder for Politicians (Django, DRF, Stripe)</li>
-      <li>Mental Wellness Platform (OAuth, Razorpay, Podcast Support)</li>
-      <li>Smart NFC Business Card System (Multi-tenant, Inquiry Forms)</li>
-    </ul>
+    <div class="projects">
+      <h2>Project Highlights</h2>
 
-    <h2>Contact</h2>
-    <p>Email: kapil@example.com</p>
-    <p>GitHub: <a href="https://github.com/Kapil-Sharma1" target="_blank">Kapil-Sharma1</a></p>
+      <div class="project">
+        Developed a dynamic, no-code platform enabling users to build and preview custom websites for political campaigns. Integrated Stripe for monthly and yearly subscriptions with options to publish using a personal or purchased domain.
+      </div>
+
+      <div class="project">
+        Created a mental wellness platform featuring content on yoga, healing, and meditation. Included podcast support, product purchases, daily quizzes with rewards, OAuth login, and Razorpay integration for smooth transactions.
+      </div>
+
+      <div class="project">
+        Engineered a multi-tenant system where companies can create digital NFC business cards with profile editing, inquiry forms, custom fields, and document uploads. Each card acts as a sharable contactless experience.
+      </div>
+
+      <div class="project">
+        Worked on an automotive mobile app with features like cruise control, eco/sports modes, and user-specific subscriptions. Customized Django admin for push notifications, vehicle/device logs, dealer panels, and Zoho CRM integration via webhooks.
+      </div>
+
+      <div class="project">
+        Built a dual-sided platform for shop and plane owners to book and manage appointments, work orders, and reschedules. Integrated pricing overrides, multi-day bookings, Stripe payments, and a fully-featured notification system.
+      </div>
+
+      <div class="project">
+        Developed a B2B marketplace for IT peripherals with advanced quote management, document verification, and order negotiation flows. Supported both online and offline payments and included shipping, offers, and courier management features.
+      </div>
+
+      <div class="project">
+        Created a platform for students and researchers to upload academic documents, which are processed using an LLM to suggest improvements. Implemented a credit system, referral rewards, subscription models, and Trustpilot integration for reviews.
+      </div>
+    </div>
   </div>
 </body>
 </html>
