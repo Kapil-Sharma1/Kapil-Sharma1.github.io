@@ -1,134 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kapil Kumar | Backend Developer</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f9;
-      color: #333;
-    }
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 40px 20px;
-    }
-    .header {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-    .header h1 {
-      font-size: 36px;
-      margin-bottom: 10px;
-    }
-    .header h2 {
-      font-size: 20px;
-      color: #777;
-    }
-    .header p {
-      margin: 5px 0;
-    }
-    .section {
-      margin-bottom: 40px;
-    }
-    .section h2 {
-      font-size: 26px;
-      margin-bottom: 20px;
-      color: #2c3e50;
-    }
-    .project {
-      margin-bottom: 30px;
-    }
-    .skills {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px 40px;
-    }
-    .skill-category {
-      font-weight: bold;
-      margin-bottom: 5px;
-    }
-    ul {
-      padding-left: 20px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapil Kumar - Backend Developer Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #0044cc;
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+        header p {
+            margin: 5px 0;
+            font-size: 1.5em;
+        }
+        section {
+            padding: 40px 20px;
+        }
+        h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+        .project {
+            margin-bottom: 40px;
+        }
+        .project h3 {
+            font-size: 1.8em;
+            color: #333;
+        }
+        .project p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #555;
+        }
+        .skills ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .skills li {
+            background-color: #0044cc;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 1.2em;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-      <h1>Kapil Kumar</h1>
-      <h2>Backend Developer</h2>
-      <p>Email: sharmaakapil10@gmail.com</p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/kapil-kumar-sharma" target="_blank">kapil-kumar-sharma</a></p>
+
+<header>
+    <h1>Kapil Kumar</h1>
+    <p>Backend Developer</p>
+</header>
+
+<section>
+    <h2>Projects</h2>
+
+    <div class="project">
+        <h3>Dynamic Website Builder for Politicians</h3>
+        <p>Developed a dynamic website builder using Django and Django REST Framework (DRF) to help US politicians create and manage their political campaign websites. The platform allows users to customize their sites easily, with an integrated editor for frontend customization and a preview feature managed by the backend. Stripe payment integration offers monthly and yearly subscription plans with the option to use a custom domain or purchase one through the platform.</p>
     </div>
 
-    <div class="section">
-      <h2>Projects</h2>
-
-      <div class="project">
-        <p>A dynamic platform built using Django and Django Rest Framework that enables US politicians to create fully customizable campaign websites. The platform features a frontend editor for real-time website editing and a backend preview system to visualize changes before publishing. Users can subscribe to monthly or yearly plans via Stripe and choose to publish on a custom domain or buy one directly through the system.</p>
-      </div>
-
-      <div class="project">
-        <p>A wellness platform where users explore content related to yoga, healing, and meditation. Users can purchase wellness-related products, listen to podcasts, and access recorded sessions. Login is available via Google and Facebook, and payments are handled using Razorpay. The platform includes a daily quiz with point-based rewards, redeemable as discounts, and a search feature for nearby wellness communities.</p>
-      </div>
-
-      <div class="project">
-        <p>An NFC-powered digital business card system developed as a Django tenant project. Companies act as tenants, and users can create personalized NFC cards to share business details through a simple tap. The system supports profile updates, working hours, enquiry forms, document uploads, social media links, and custom fields, all while supporting multi-tenancy architecture.</p>
-      </div>
-
-      <div class="project">
-        <p>A feature-rich mobile app for cars offering cruise control, eco and sports modes, speed limit, hill hold, and more. Admins can manage subscriptions, vehicles, and users. The Django admin panel is customized to handle push notifications and log tracking using Django Channels and WebSocket. Webhooks sync Zoho CRM updates, and user data from the older version is migrated seamlessly. OTP login is supported.</p>
-      </div>
-
-      <div class="project">
-        <p>An app for shop and plane owners. Shop owners manage services, schedules, and delivery modes, including busy time slots. Plane owners can book services, reschedule, and handle appointments. Work orders are created for additional in-progress tasks. Stripe handles payment and refund flows. The platform includes email, push, and in-app notifications, and supports login via Google, Microsoft, Facebook, and Apple.</p>
-      </div>
-
-      <div class="project">
-        <p>A B2B marketplace for IT products targeting the Middle East and Gulf countries. Sellers and buyers belong to companies with sub-users like managers and admins. Buyers submit quotes, and only relevant sellers are notified. Sellers respond with offers that buyers can approve or request changes to. It features direct seller offers, shipment tracking, document verification, and both online and offline payments with approval flows.</p>
-      </div>
-
-      <div class="project">
-        <p>A platform designed for students and researchers to upload academic documents for LLM-based review and formatting. Users earn credits through referrals, logins, and activity milestones to format documents without payment. The system supports detailed credit management, multiple subscription types, and pay-per-use models. Trustpilot is integrated for reviews, and login is available via email/password or social accounts.</p>
-      </div>
+    <div class="project">
+        <h3>Mental Wellness Platform</h3>
+        <p>Created a mental wellness platform where users can access content related to yoga, meditation, and healing. The platform supports user authentication via OTP, Google, and Facebook. It also integrates Razorpay for payment processing and allows users to purchase wellness-related products. The platform features daily quizzes where users can earn points to redeem for discounts, as well as a community search feature for users to connect locally.</p>
     </div>
 
-    <div class="section">
-      <h2>Skills</h2>
-      <div class="skills">
-        <div>
-          <div class="skill-category">Python</div>
-          <ul>
-            <li>Django, DRF, Celery, Websocket</li>
-            <li>django-grpc, Pandas, BS4, Selenium</li>
-          </ul>
-        </div>
-        <div>
-          <div class="skill-category">Databases</div>
-          <ul>
-            <li>PostgreSQL, Redis, MongoDB</li>
-          </ul>
-        </div>
-        <div>
-          <div class="skill-category">Cloud</div>
-          <ul>
-            <li>AWS - EC2, ECR, RDS, IAM, S3, VPC, CI/CD pipelines</li>
-          </ul>
-        </div>
-        <div>
-          <div class="skill-category">Tools</div>
-          <ul>
-            <li>Docker, RabbitMQ, Elastic Search</li>
-          </ul>
-        </div>
-      </div>
+    <div class="project">
+        <h3>Smart NFC Business Card System</h3>
+        <p>Built a multi-tenant system for creating smart business cards with NFC functionality using Django. Users can create and manage their business cards, update their profiles, and add social media links. The NFC feature allows users to share their business details via a simple tap. The platform includes an inquiry form for direct communication and allows card owners to upload documents and customize their profiles.</p>
     </div>
 
-  </div>
+    <div class="project">
+        <h3>Mobile App for Cars (Version 2)</h3>
+        <p>Developed a mobile app that provides cruise control features such as speed limit, hill hold, eco mode, and sports mode. Admins can create and manage subscriptions through a DIY interface, with options to add or remove vehicles and additional users. Integrated with Django Channels and WebSocket for push notifications and real-time data updates, the platform also supports data migration from version 1 and allows user authentication via OTP.</p>
+    </div>
+
+    <div class="project">
+        <h3>B4youfly - Flight and Shop Service App</h3>
+        <p>Designed an app that allows shop owners to manage their businesses and plane owners to book services. The app supports booking, rescheduling, and payment processing via Stripe. It also allows shop owners to create work orders and manage their service offerings. Features include custom availability settings, notifications via email and push alerts, and multi-login options such as Google, Microsoft, Facebook, and Apple.</p>
+    </div>
+
+    <div class="project">
+        <h3>ITBidz - Online Marketplace for IT Peripherals</h3>
+        <p>Developed an online marketplace for buying and selling IT peripherals in the Middle East and Gulf regions. The platform allows sellers to create offers for products, and buyers can make quotes for multiple items. Offers are negotiated between sellers and buyers, and transactions are completed through online payments or offline bank transfers. The platform also includes a verification system and supports document uploads for user authentication and product listings.</p>
+    </div>
+
+    <div class="project">
+        <h3>Formatr - Document Formatting and Editing Platform</h3>
+        <p>Built a platform designed for students and researchers to format and analyze their documents. The app uses LLMs (Large Language Models) to provide real-time error corrections and suggestions. Users earn credits based on activities like signing up or uploading documents, which they can use to format or analyze papers. The platform supports social logins and integrates with Trustpilot for reviews. It offers pay-per-use or subscription models for students and researchers.</p>
+    </div>
+</section>
+
+<section class="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>Python</li>
+        <li>Django, DRF, Celery, Websocket, django-grpc</li>
+        <li>Pandas, BS4, Selenium</li>
+        <li>PostgreSQL, Redis, MongoDB</li>
+        <li>AWS - EC2, ECR, RDS, IAM, S3, VPC</li>
+        <li>CI/CD pipelines</li>
+        <li>Docker, RabbitMQ, Elastic Search</li>
+    </ul>
+</section>
+
+<footer>
+    <p>Contact: <a href="mailto:sharmaakapil10@gmail.com">sharmaakapil10@gmail.com</a></p>
+    <p><a href="https://linkedin.com/in/kapil-kumar-sharma" target="_blank">LinkedIn</a></p>
+</footer>
+
 </body>
 </html>
