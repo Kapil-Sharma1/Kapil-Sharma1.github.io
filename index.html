@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Kapil Kumar | Backend Developer</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
-      background: #f7f9fc;
+      background-color: #f9fafc;
       color: #333;
     }
     .container {
@@ -17,76 +17,95 @@
       margin: auto;
       padding: 2rem;
     }
-    h1, h2 {
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 0.2rem;
       color: #2c3e50;
     }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-    .subtitle {
+    header p {
       font-size: 1.2rem;
-      margin-bottom: 1rem;
       color: #555;
     }
     .contact {
-      margin-bottom: 2rem;
-      font-size: 1rem;
+      text-align: center;
+      margin-bottom: 3rem;
     }
     .contact p {
       margin: 0.3rem 0;
+      font-size: 1rem;
     }
-    .projects {
-      margin-top: 2rem;
+    .projects h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: #1a1a1a;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.5rem;
     }
     .project {
-      margin-bottom: 1.5rem;
-      background: #fff;
-      padding: 1rem 1.5rem;
-      border-radius: 8px;
+      margin-bottom: 2rem;
+      background-color: #fff;
+      border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      padding: 1.5rem;
+    }
+    .project p {
+      margin: 0.5rem 0;
+      line-height: 1.8;
+    }
+    a {
+      color: #007acc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Kapil Kumar</h1>
-    <p class="subtitle">Backend Developer</p>
-    
+    <header>
+      <h1>Kapil Kumar</h1>
+      <p>Backend Developer | Django | REST APIs | LLM Integration</p>
+    </header>
+
     <div class="contact">
       <p><strong>Email:</strong> sharmaakapil10@gmail.com</p>
       <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/kapil-kumar-sharma" target="_blank">kapil-kumar-sharma</a></p>
     </div>
 
     <div class="projects">
-      <h2>Project Highlights</h2>
+      <h2>Projects</h2>
 
       <div class="project">
-        Developed a dynamic, no-code platform enabling users to build and preview custom websites for political campaigns. Integrated Stripe for monthly and yearly subscriptions with options to publish using a personal or purchased domain.
+        <p>I built a no-code platform where politicians in the US can create and manage their own campaign websites without needing technical knowledge. The websites are fully dynamic, allowing users to select components, customize layouts, and preview designs before publishing. A robust Stripe integration enables seamless monthly and yearly subscription plans. Users can publish on their own domain or purchase one directly from the app, making it a comprehensive and user-friendly website builder.</p>
       </div>
 
       <div class="project">
-        Created a mental wellness platform featuring content on yoga, healing, and meditation. Included podcast support, product purchases, daily quizzes with rewards, OAuth login, and Razorpay integration for smooth transactions.
+        <p>This mental and healthcare platform focuses on spreading wellness through yoga, meditation, and healing practices. I built features allowing users to view wellness-related content, listen to podcasts, and purchase related products. Integrated Razorpay for payment, and OAuth-based login (Google/Facebook). The system includes gamified daily quizzes, community exploration, and rewards system where users earn points and redeem them for discounts. Everything is designed to foster daily engagement and mindful living.</p>
       </div>
 
       <div class="project">
-        Engineered a multi-tenant system where companies can create digital NFC business cards with profile editing, inquiry forms, custom fields, and document uploads. Each card acts as a sharable contactless experience.
+        <p>I designed a multi-tenant NFC digital card platform where companies can onboard users and create tap-enabled digital business cards. These cards support real-time data sharing and come with customizable templates. Users can add business hours, upload documents, update social media links, and even receive inquiries via an integrated form. It also supports role-based access within organizations. The goal was to merge modern networking with enterprise-level card and identity management.</p>
       </div>
 
       <div class="project">
-        Worked on an automotive mobile app with features like cruise control, eco/sports modes, and user-specific subscriptions. Customized Django admin for push notifications, vehicle/device logs, dealer panels, and Zoho CRM integration via webhooks.
+        <p>I developed a mobile application for advanced car control systems, integrating features like cruise control, speed limitation, eco/sport driving modes, and more. Admins can customize plans, manage car-user relationships, and oversee NexCruise logs through a custom Django admin panel. Real-time communication is powered by WebSockets via Django Channels. I also built a separate admin portal for car dealers and set up webhooks with Zoho CRM to sync user data automatically. The app was a production upgrade from an earlier version, including full migration of previous user data.</p>
       </div>
 
       <div class="project">
-        Built a dual-sided platform for shop and plane owners to book and manage appointments, work orders, and reschedules. Integrated pricing overrides, multi-day bookings, Stripe payments, and a fully-featured notification system.
+        <p>This iOS mobile app is designed for airplane and shop owners to manage services, bookings, and work orders. Shop owners configure their availability, services, and delivery modes. Plane owners can book services that span multiple days. I implemented custom pricing, rescheduling, and approval workflows. Stripe integration handles payments and manual refunds. Notifications are sent via email, push, and in-app alerts. The admin dashboard was enhanced to manage detailed financial and booking records, though the project didn’t proceed beyond beta launch.</p>
       </div>
 
       <div class="project">
-        Developed a B2B marketplace for IT peripherals with advanced quote management, document verification, and order negotiation flows. Supported both online and offline payments and included shipping, offers, and courier management features.
+        <p>This is a B2B marketplace app for the Middle East and Gulf region, where IT companies can buy and sell hardware like laptops, servers, and accessories. Each seller and buyer is a company with multiple internal users (admins, managers, etc.). Quotes created by buyers reach only relevant sellers, who can respond with offers. Detailed quote approval workflows, custom payment methods (online & offline), shipment tracking, and admin-verified user registration make this a robust e-commerce ecosystem. Sellers can also list direct offers, which buyers can quote against, forming orders upon mutual approval.</p>
       </div>
 
       <div class="project">
-        Created a platform for students and researchers to upload academic documents, which are processed using an LLM to suggest improvements. Implemented a credit system, referral rewards, subscription models, and Trustpilot integration for reviews.
+        <p>This platform helps students and researchers format academic documents using LLM-powered suggestions and corrections. After login (email or social login), users upload papers which are processed via an LLM model. They can edit or regenerate the content based on feedback. A referral system rewards both referrer and referee with credits. Credit-based usage allows for flexible access, with subscription models like pay-per-use, weekly, semester-wise, or yearly. Students also receive bonus credits for milestones. The platform integrates Trustpilot for review collection and social sharing for organic growth.</p>
       </div>
     </div>
   </div>
